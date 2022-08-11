@@ -114,7 +114,7 @@
     /* termina la navbar */
 
     .logo {
-        width: 3%;
+        width: 5%;
         cursor: pointer;
         border-radius: 50px;
     }
@@ -415,7 +415,11 @@
     }
 
     .s4 img {
+
         width: 550px;
+
+        width: 600px;
+
         height: 450px;
     }
 
@@ -471,6 +475,7 @@
 
     .ucm1 img {
         width: 250px;
+        height: 160px;
         border-radius: 10px;
         margin-left: 20px;
     }
@@ -672,3 +677,4 @@
     }
 
 }
+

@@ -382,8 +382,8 @@
     }
 
     .layout img{
-        width: 550px;
-        height: 400px;
+        width: 600px;
+        height: 450px;
     }
     
     /*css a la section "stanlee" */
@@ -416,10 +416,7 @@
 
     .s4 img {
 
-        width: 550px;
-
         width: 600px;
-
         height: 450px;
     }
 
@@ -470,6 +467,7 @@
     .vj4 {
         display: flex;
     }
+
 
     /*css a la section "ucm" */
 
@@ -522,6 +520,11 @@
         display: flex;
         justify-content: center;
         margin-top: 20px;
+    }
+
+    .carousel-inner img {
+        width: 700px;
+        height: 450px;
     }
 
 

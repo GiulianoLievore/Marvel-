@@ -1,0 +1,66 @@
+/*css a la section "ucm" */
+#ucmMarvel{
+
+    .layout-ucm{
+        .ucm1 {
+            display: flex;
+            img{
+                width: 250px;
+                height: 200px;
+                border-radius: 10px;
+                margin-left: 20px;
+                display: flex;
+            }
+        }
+
+        .ucm2 {
+            display: flex;
+            img {
+                width: 250px;
+                border-radius: 10px;
+                margin-left: 20px;
+            }
+        }
+
+        .ucm3 {
+            display: flex;
+            img {
+                width: 250px;
+                border-radius: 10px;
+                margin-left: 20px;
+            }
+        }
+
+        .ucm4 {
+            display: flex;
+            img {
+                width: 250px;
+                border-radius: 10px;
+                margin-left: 20px;
+            }
+        }
+    
+    }
+        #table-ucm {
+            display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+
+    #iframe-ucm {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .carousel-inner {
+        img {
+        width: 700px;
+        height: 450px;
+        }
+    }
+
+}
+
+

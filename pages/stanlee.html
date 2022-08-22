@@ -1,38 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Sección a modo de homenaje al escritor y editor estadounidense, Stanley Martin Lieber, mas conocido como StanLee">
+    <meta name="keywords" content="Marvel, superhéroes, Comics, Peliculas, Comics, Videojuegos, stanlee, ">
     <title>Marvel entertainment</title>
-    <link rel="shortcut icon" href="../multimedia/spiderman-icon-23.jpg">
+
+    <!-- ICONO -->
+    <link rel="shortcut icon" href="./multimedia/spiderman-icon-23.jpg">
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Roboto+Condensed:ital@0;1&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Roboto+Condensed:ital@0;1&family=Roboto:wght@100&display=swap" rel="stylesheet">    
+
+    <!-- Libreria y Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     
-    <header>
-        <div class="container">
-            <img class="logo animate__animated animate__backInLeft" src="../multimedia/marvel.logo.png" alt="main logo">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="../index.html">Marvel Comics</a></li>
-                    <li><a href="ucm.html">Ucm</a></li>
-                    <li><a href="stanlee.html">Stan Lee</a></li>
-                    <li><a href="videojuegos.html">Videojuegos</a></li>
-                    <li><a href="merchandising.html">Merchandising</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="sticky-md-top ">
+        <nav class="navbar navbar-expand-lg bg-light container">
+            <div class="container-fluid ">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <img class="logo animate__animated animate__backInLeft" src="../multimedia/marvel.logo.png" alt="main logo">
+                <div class="collapse navbar-collapse " id="navbarNav">
+                  <ul class="m-0">
+                    <li class="d-flex gap-3 fs-5">
+                      <a class="text-decoration-none" aria-current="page" href="../index.html">Marvel Comics</a>
+                      <a class="text-decoration-none" aria-current="page" href="../pages/ucm.html">Ucm</a>
+                      <a class="text-decoration-none" aria-current="page" href="../pages/stanlee.html">Stan Lee</a>
+                      <a class="text-decoration-none" aria-current="page" href="../pages/videojuegos.html">Videojuegos</a>
+                      <a class="text-decoration-none" aria-current="page" href="../pages/merchandising.html">Merchandising</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
         <main id="stanleeMarvel">
 
         <!-- A las secciones del main exceptuando al iframe, se les aplico Grid -->
+
+
+        <!-- Pequeña biografía de StanLee -->
         
             <section class="layout-sl">
                 <div class="sl1">
@@ -48,6 +67,7 @@
                     </div>
                 </div>
 
+        <!-- biografía completa de StanLee -->
 
                 <div class="sl2">
                 <div>
@@ -70,6 +90,8 @@
                     </div>
                 </div>
 
+        <!-- Caracteristicas con las que StanLee impregnaba a sus heroes -->        
+
             <div class="sl3">
                 <div>
                 <h3>Obras</h3>
@@ -85,6 +107,8 @@
 
             </div>
 
+        <!-- Libros escritos por StanLee -->    
+
                 <div class="s4">
                 <h4>Libros</h4>
                     <p>
@@ -92,6 +116,10 @@
                         Lee, Stan (1974). Origins of Marvel Comics. Marvel Entertainment Group. ISBN 978-0-7851-0551-0.
                         Lee, Stan; David, Peter (2015). Amazing, Fantastic, Incredible: A Marvelous Memoir. Simon & Schuster. ISBN 1501107771.  
                     </p>
+
+
+        <!-- imagenes de la vida de Stan a través de los años -->    
+
 
                     <div id="carouselExampleIndicators" class="carousel slide  text-center" data-bs-ride="true">
                         <div class="carousel-indicators">
@@ -115,7 +143,9 @@
                 </div>
             </section>
 
+        <!-- charla de Stan hacia jovenes donde habla como desarrollo a uno de los personajes mas importantes de la cultura popular, spiderman -->    
             
+
             <section id="iframe-stanlee">               
                 <div>
                     <iframe src="https://www.youtube.com/embed/z8Mma9BLl6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -123,6 +153,8 @@
             </section>
 
         </main>
+
+        <!-- Redes sociales -->    
 
 
         <footer>

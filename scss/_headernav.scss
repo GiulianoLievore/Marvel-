@@ -1,10 +1,19 @@
 header {
-    position: sticky;
-    top: 0;
-    background-color: $gris-claro;
-    border: 5px solid $gris-oscuro;
-    z-index: 50;           
+    background-color: rgb(39, 39, 39);
+    border: 5px solid rgb(15, 15, 15);
+
+    .navbar{
+    padding: 35px 0;
+    background-color: rgb(39, 39, 39) !important;
+        a{
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+        }
+        
+    }
 }
+
+
 
 .container {
         width: 80%;

@@ -3,523 +3,476 @@
     margin: 0;
     }
 
-    html{
-        font-size: 1rem;
-        font-family: "Roboto", sans-serif;
-    }
+html{
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+}
 
-    @import "variables";
-    @import "headernav";
-    @import "ucm";
+/*aplicando mapa a header*/
+
+$header:(
+    bordeHeader: 5px solid rgb(15, 15, 15),
+    bgHeader: rgb(39, 39, 39),
+    colorEnlace: #fff
+);
+
+@import "variables";
+@import "headernav";
+@import "ucm";
+
+/*aplicando mixin a los background image*/
+
+@mixin propiedadBackground ($size, $position, $repeat){
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+}
+
+/*aplicando extend a los headings*/
+
+%headings{
+    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
 
 /* aplicación de backgrounds para cada sección */
 
-    #marvelComics {
-        background-image: linear-gradient(rgba(5, 10, 5, 0.116), rgba(0, 0, 0, 0.158)), url(https://www.todofondos.net/wp-content/uploads/personajes-de-marvel-comics-4k-hd-fondos-de-escritorio-para-%E2%80%A2-dual-scaled.jpg);
-        background-size: cover ;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+#marvelComics {
+    background-image: linear-gradient(rgba(5, 10, 5, 0.116), rgba(0, 0, 0, 0.158)), url(https://www.todofondos.net/wp-content/uploads/personajes-de-marvel-comics-4k-hd-fondos-de-escritorio-para-%E2%80%A2-dual-scaled.jpg);
+    @include propiedadBackground(cover, center, no-repeat);
+}
 
-    #ucmMarvel {
-        background-image: url(https://wallpapercave.com/uwp/uwp2500169.jpeg);
-        background-size: cover ;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+#ucmMarvel {
+    background-image: url(https://wallpapercave.com/uwp/uwp2500169.jpeg);
+    @include propiedadBackground(cover, center, no-repeat);
+}
 
-    #stanleeMarvel{
-        background-image: url(https://cdna.artstation.com/p/assets/images/images/014/009/742/large/miguel-luna-stan-lee-1.jpg?1542064871);
-        background-size: cover ;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+#stanleeMarvel{
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/014/009/742/large/miguel-luna-stan-lee-1.jpg?1542064871);
+    @include propiedadBackground(cover, center, no-repeat);
+}
 
-    #videojuegosMarvel{
-        background-image: url(https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/maestras/spiderman_ps4__nombre_provisional_-4623521.jpg);
-        background-size: cover ;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+#videojuegosMarvel{
+    background-image: url(https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/maestras/spiderman_ps4__nombre_provisional_-4623521.jpg);
+    @include propiedadBackground(cover, center, no-repeat);
+}
 
-    #merchandisingMarvel {
-        background-image: url(https://images5.alphacoders.com/283/283337.jpg);
-        background-size: cover ;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+#merchandisingMarvel {
+    background-image: url(https://images5.alphacoders.com/283/283337.jpg);
+    @include propiedadBackground(cover, center, no-repeat);
+}
 
-    /* termina la aplicación de backgrounds para las secciones */
+/* termina la aplicación de backgrounds para las secciones */
 
 
 
-    /* aplicando css a h-p-table (de todas las secciones) */
+/* aplicando css a h-p-table (de todas las secciones) */
 
-    main {
-        padding-top: 20px;
-    }
-
-
-    h1 {
-        text-decoration: underline;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1rem;
-    }
-
-    
-
-    h2 {
-        text-decoration: underline;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1rem;
-    }
-
-    h3 {
-        text-decoration: underline;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1rem;
-    }
-
-    h4 {
-        text-decoration: underline;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1rem;
-    }
+main {
+    padding-top: 20px;
+}
 
 
-    section p  {
-        background-color: #2e2e2e00;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        text-align:justify;
-        font-size: 1rem;    
-    }
+h1 {
+    @extend %headings;
+}
 
-    section table {
-        background-color: rgb(77, 15, 223);
-        color: rgb(255, 255, 255);
-        font-family: 'Roboto', sans-serif;
-    }
+h2 {
+    @extend %headings;
+}
 
-    /* acaba el main */
+h3 {
+    @extend %headings;
+}
+
+h4 {
+    @extend %headings;
+}
 
 
-    /*aplicando Grid*/
+section p  {
+    background-color: #2e2e2e00;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align:justify;
+    font-size: 1rem;    
+}
+
+section table {
+    background-color: rgb(77, 15, 223);
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+/* acaba el main */
+
+
+/*aplicando Grid*/
 .layout {
-    max-width: 1600px;
-    margin: 0 auto;
-    display: grid;
-    grid:
-    "a" 0fr
-    "b" 0fr
-    "c" 0fr
-    "d" 1fr
-    / 1fr;
     background-color: rgba(46, 45, 45, 0.562);
     border: 3px solid rgb(255, 255, 255);
     padding: 10px;   
 }
 
-    .a { 
-        grid-area: a;
-    }
-    .b { 
-        grid-area: b; 
-    }
-    .c { 
-        grid-area: c; 
-    }
-    .d { 
-        grid-area: d; 
-    }
+.layout-sl {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid:
+    "sl1" 0fr
+    "sl2" 0fr
+    "s3" 0fr
+    "s4" 0fr
+    / 1fr;
+    gap: 8px;
+    background-color: rgba(65, 62, 62, 0.568);
+    border: 3px solid rgb(255, 255, 255);
+}
 
-
-    .layout-sl {
-        max-width: 1600px;
-        margin: 0 auto;
-        display: grid;
-        grid:
-        "sl1" 0fr
-        "sl2" 0fr
-        "s3" 0fr
-        "s4" 0fr
-        / 1fr;
-        gap: 8px;
-        background-color: rgba(65, 62, 62, 0.568);
-        border: 3px solid rgb(255, 255, 255);
-    }
-
-    .sl1 { 
-        grid-area: sl1; 
-    }
-    .sl2 { 
-        grid-area: sl2; 
-    }
-    .sl3 { 
-        grid-area: s3; 
-    }
-    .sl4 { 
-        grid-area: s4; 
-    }
+.sl1 { 
+    grid-area: sl1; 
+}
+.sl2 { 
+    grid-area: sl2; 
+}
+.sl3 { 
+    grid-area: s3; 
+}
+.sl4 { 
+    grid-area: s4; 
+}
 
 
 
-    .layout-vj {
-        max-width: 1600px;
-        margin: 0 auto;
-        display: grid;
-        grid:
-        "sl1" 0fr
-        "sl2" 0fr
-        "s3" 0fr
-        / 1fr;
-        gap: 8px;
-        background-color: rgba(65, 62, 62, 0.568);
-        border: 3px solid rgb(255, 255, 255);
-    }
+.layout-vj {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid:
+    "sl1" 0fr
+    "sl2" 0fr
+    "s3" 0fr
+    / 1fr;
+    gap: 8px;
+    background-color: rgba(65, 62, 62, 0.568);
+    border: 3px solid rgb(255, 255, 255);
+}
 
-    .vj1 { 
-        grid-area: sl1; 
-    }
-    .vj2 { 
-        grid-area: sl2; 
-    }
-    .vj3 { 
-        grid-area: s3; 
-    }
-
-
-    .layout-ucm {
-        max-width: 1600px;
-        margin: 0 auto;
-        display: grid;
-        grid:
-        "sl1" 0fr
-        "sl2" 1fr
-        "s3" 0fr
-        "s4" 0fr
-        / 1fr;
-        gap: 8px;
-        background-color: rgba(65, 62, 62, 0.568);
-        border: 3px solid rgb(255, 255, 255);
-    }
-
-    .ucm1 { 
-        grid-area: sl1; 
-    }
-    .ucm2 { 
-        grid-area: sl2; 
-    }
-    .ucm3 { 
-        grid-area: s3; 
-    }
-    .ucm4 { 
-        grid-area: s4; 
-    }
+.vj1 { 
+    grid-area: sl1; 
+}
+.vj2 { 
+    grid-area: sl2; 
+}
+.vj3 { 
+    grid-area: s3; 
+}
 
 
-    .layout-merch {
-        max-width: 1600px;
-        margin: 0 auto;
-        display: grid;
-        grid:
-        "sl1" 0fr
-        "sl2" 1fr
-        "s3" 0fr
-        "s4" 0fr
-        / 1fr;
-        gap: 8px;
+.layout-ucm {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid:
+    "sl1" 0fr
+    "sl2" 1fr
+    "s3" 0fr
+    "s4" 0fr
+    / 1fr;
+    gap: 8px;
+    background-color: rgba(65, 62, 62, 0.568);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.ucm1 { 
+    grid-area: sl1; 
+}
+.ucm2 { 
+    grid-area: sl2; 
+}
+.ucm3 { 
+    grid-area: s3; 
+}
+.ucm4 { 
+    grid-area: s4; 
+}
+
+
+.layout-merch {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid:
+    "sl1" 0fr
+    "sl2" 1fr
+    "s3" 0fr
+    "s4" 0fr
+    / 1fr;
+    gap: 8px;
+    
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.merch1 { 
+    grid-area: sl1; 
+}
+.merch2 { 
+    grid-area: sl2; 
+}
+.merch3 { 
+    grid-area: s3; 
+}
+.merch4 { 
+    grid-area: s4; 
+}
+
+
+/*aplicando Grid*/
+
+
+/*css a la section "marvelcomics" */
+
+#iframe-index  {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.layout img{
+    width: 600px;
+    height: 450px;
+}
+    
+/*css a la section "stanlee" */
+.sl1 img {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.sl1 {
+    display: flex;
+}
+
+.sl2 img {
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.sl2 {
+    display: flex;
+}
+
+
+
+#iframe-stanlee {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.s4 img {
+
+    width: 600px;
+    height: 450px;
+}
+
+/*css a la section "videojuegos" */
+
+
+.vj1 iframe {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-top: 40px;      
+}
+
+.vj1 {
+    display: flex;
+}
+
+.vj2 iframe {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-top: 40px;      
+}
+
+.vj2 {
+    display: flex;
+}
+
+
+.vj3 iframe {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-top: 40px;      
+}
+
+.vj3 {
+    display: flex;
+}
+
+.vj4 iframe {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-top: 40px;      
+}
+
+.vj4 {
+    display: flex;
+}
+
+
+
+/*css a la section "merch" */
+
+#merchandisingMarvel section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+#merchandisingMarvel section h2{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+    width: 33%;
+}
+
+.estilo-a{
+    font-family: 'Roboto', sans-serif;
+}
+.estilo-a a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.estilo-a a:hover{
+    text-decoration: underline;
+}
+.estilo-a .img-container{
+    overflow: hidden;
+    height: 400px;
+}
+.estilo-a .img-container img{
+    width: 100%;
+    top: -25%;
+    transition: all 0.5s;
+}
+.estilo-a:hover .img-container img{
+    transform: scale(1.2);
+}
+
         
-        border: 4px solid rgb(255, 255, 255);
+/*aplicación de media queries*/
+
+@media screen and (max-width: 487px){
+
+    .container ul li {
+        flex-direction: column;
+        display: flex;            
     }
 
-    .merch1 { 
-        grid-area: sl1; 
-    }
-    .merch2 { 
-        grid-area: sl2; 
-    }
-    .merch3 { 
-        grid-area: s3; 
-    }
-    .merch4 { 
-        grid-area: s4; 
+    .container {
+        flex-direction: column;
+        padding: 2%;
     }
 
-
-    /*aplicando Grid*/
-
-    
-    /*css a la section "marvelcomics" */
-
-    #iframe-index  {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+    .logo {
+        width: 15%;
+        margin-bottom:5px ;
     }
 
-    .layout img{
-        width: 600px;
-        height: 450px;
+    .sl1  {
+        flex-direction: column;
     }
-    
-    /*css a la section "stanlee" */
-    .sl1 img {
-        width: 250px;
-        border-radius: 10px;
-        margin-left: 20px;
-    }
-    .sl1 {
-        display: flex;
-    }
-    
-    .sl2 img {
-        width: 200px;
-        border-radius: 10px;
-        margin-left: 20px;
-    }
-    
+
     .sl2 {
-        display: flex;
-    }
-    
-
-    
-    #iframe-stanlee {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
+        flex-direction: column;
     }
 
-    .s4 img {
-
-        width: 600px;
-        height: 450px;
+    #table-ucm tbody {
+        max-width: 45px;            
     }
 
-    /*css a la section "videojuegos" */
+    #table-ucm td {
+        max-width: 45px;            
+    }
+}
     
-    
-    .vj1 iframe {
-        width: 250px;
-        border-radius: 10px;
-        margin-left: 20px; 
-        margin-top: 40px;      
+
+@media screen and (max-width: 750px){
+    .container ul li {
+        flex-direction: column;
+        display: flex;            
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    .logo {
+        width: 15%;
+        margin-bottom:5px ;
+    }
+
+    .sl1  {
+        flex-direction: column;
+    }
+
+    .sl2 {
+        flex-direction: column;
     }
 
     .vj1 {
-        display: flex;
-    }
-
-    .vj2 iframe {
-        width: 250px;
-        border-radius: 10px;
-        margin-left: 20px; 
-        margin-top: 40px;      
+        flex-direction: column;
     }
 
     .vj2 {
-        display: flex;
-    }
-
-
-    .vj3 iframe {
-        width: 250px;
-        border-radius: 10px;
-        margin-left: 20px; 
-        margin-top: 40px;      
+        flex-direction: column;
     }
 
     .vj3 {
-        display: flex;
-    }
-
-    .vj4 iframe {
-        width: 250px;
-        border-radius: 10px;
-        margin-left: 20px; 
-        margin-top: 40px;      
+        flex-direction: column;
     }
 
     .vj4 {
-        display: flex;
+        flex-direction: column;
     }
 
-
-
-    /*css a la section "merch" */
-    
-    #merchandisingMarvel section{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        padding: 50px 0;
+    .ucm1 {
+        flex-direction: column;
     }
-    #merchandisingMarvel section h2{
-        width: 100%;
-        color: rgb(255, 255, 255);
-        font-family: 'Roboto', sans-serif;
+    .ucm2 {
+        flex-direction: column;
     }
-    .card{
-        width: 33%;
+    .ucm3 {
+        flex-direction: column;
+    }
+    .ucm4 {
+        flex-direction: column;
     }
 
-    .estilo-a{
-        font-family: 'Roboto', sans-serif;
+    #merchandisingMarvel section {
+        flex-direction: column;
     }
-    .estilo-a a{
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-    }
-    .estilo-a a:hover{
-        text-decoration: underline;
-    }
+
     .estilo-a .img-container{
-        overflow: hidden;
-        height: 400px;
+        height: 50%;
     }
+
     .estilo-a .img-container img{
-        width: 100%;
-        top: -25%;
-        transition: all 0.5s;
+        max-width: 300px;
+        position: static;
     }
-    .estilo-a:hover .img-container img{
-        transform: scale(1.2);
-    }
-
-        
-    /*aplicación de media queries*/
-
-    @media screen and (max-width: 487px){
-
-        .container ul li {
-            flex-direction: column;
-            display: flex;            
-        }
-
-        .container {
-            flex-direction: column;
-            padding: 2%;
-        }
-
-        .logo {
-            width: 15%;
-            margin-bottom:5px ;
-        }
-
-        .sl1  {
-            flex-direction: column;
-        }
-
-        .sl2 {
-            flex-direction: column;
-        }
-
-        #table-ucm tbody {
-            max-width: 45px;            
-        }
-
-        #table-ucm td {
-            max-width: 45px;            
-        }
-
-        
-
-    }
-    
-
-    @media screen and (max-width: 750px){
-        .container ul li {
-            flex-direction: column;
-            display: flex;            
-        }
-
-        .container {
-            flex-direction: column;
-            padding: 2%;
-        }
-
-        .logo {
-            width: 15%;
-            margin-bottom:5px ;
-        }
-
-        .sl1  {
-            flex-direction: column;
-        }
-
-        .sl2 {
-            flex-direction: column;
-        }
-
-        .vj1 {
-            flex-direction: column;
-        }
-
-        .vj2 {
-            flex-direction: column;
-        }
-
-        .vj3 {
-            flex-direction: column;
-        }
-
-        .vj4 {
-            flex-direction: column;
-        }
-
-        .ucm1 {
-            flex-direction: column;
-        }
-        .ucm2 {
-            flex-direction: column;
-        }
-        .ucm3 {
-            flex-direction: column;
-        }
-        .ucm4 {
-            flex-direction: column;
-        }
-
-        #merchandisingMarvel section {
-            flex-direction: column;
-
-        }
-
-        .estilo-a .img-container{
-            height: 50%;
-            
-            
-            }
-        .estilo-a .img-container img{
-            max-width: 300px;
-            position: static;
-            
-    }
-
 }

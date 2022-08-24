@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -8,39 +9,37 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-/* Empieza la nav bar*/
-
+/*aplicando mapa a header*/
 header {
   background-color: rgb(39, 39, 39);
   border: 5px solid rgb(15, 15, 15);
 }
-
-header .navbar{
+header .navbar {
+  padding: 35px 0;
   background-color: rgb(39, 39, 39) !important;
 }
-
-header a{
+header .navbar a {
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
 
-header .container{
-  padding: 35px 0;
-}
-/* Termina la navbar */
-
+/* termina la navbar */
 .logo {
   width: 5%;
   cursor: pointer;
   border-radius: 50px;
 }
 
-/* Empieza el footer */
+/* empieza el footer */
 footer {
   background-color: rgb(39, 39, 39);
   color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
-
 footer img {
   width: 20px;
   opacity: 0.5;
@@ -49,15 +48,7 @@ footer img:hover {
   opacity: 1;
 }
 
-@media(max-width: 768px) {
-  footer{
-    flex-direction: column; 
-    gap: 5px;
-  }   
-}
-
-/* Acaba el footer */
-
+/* acaba el footer */
 /*css a la section "ucm" */
 #ucmMarvel .layout-ucm .ucm1 {
   display: flex;
@@ -108,11 +99,19 @@ footer img:hover {
   height: 450px;
 }
 
+/*aplicando mixin a los background image*/
+/*aplicando extend a los headings*/
+h4, h3, h2, h1 {
+  text-decoration: underline;
+  text-align: center;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
 /* aplicación de backgrounds para cada sección */
-
-
 #marvelComics {
-  background-image: url(https://www.todofondos.net/wp-content/uploads/personajes-de-marvel-comics-4k-hd-fondos-de-escritorio-para-%E2%80%A2-dual-scaled.jpg);
+  background-image: linear-gradient(rgba(5, 10, 5, 0.116), rgba(0, 0, 0, 0.158)), url(https://www.todofondos.net/wp-content/uploads/personajes-de-marvel-comics-4k-hd-fondos-de-escritorio-para-%E2%80%A2-dual-scaled.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -148,12 +147,9 @@ footer img:hover {
 
 /* termina la aplicación de backgrounds para las secciones */
 /* aplicando css a h-p-table (de todas las secciones) */
-
-h1, h2, h3, h4 {
-  text-decoration: underline;
-  color: white;
+main {
+  padding-top: 20px;
 }
-
 
 section p {
   background-color: rgba(46, 46, 46, 0);
@@ -164,17 +160,17 @@ section p {
 }
 
 section table {
-  background-color: rgb(105, 64, 201);
-  color: rgb(255, 255, 255);
+  background-color: rgb(77, 15, 223);
+  color: white;
   font-family: "Roboto", sans-serif;
 }
 
 /* acaba el main */
-
 /*aplicando Grid*/
 .layout {
   background-color: rgba(46, 45, 45, 0.562);
   border: 3px solid rgb(255, 255, 255);
+  padding: 10px;
 }
 
 .layout-sl {
@@ -278,19 +274,16 @@ section table {
 
 /*aplicando Grid*/
 /*css a la section "marvelcomics" */
+#iframe-index {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
 .layout img {
-  width: 100%;
-  height: 300px;
+  width: 600px;
+  height: 450px;
 }
-
-@media(min-width: 768px) {
-  .layout img {
-    width: 600px;
-    height: 450px;
-  }
-}
-
 
 /*css a la section "stanlee" */
 .sl1 img {

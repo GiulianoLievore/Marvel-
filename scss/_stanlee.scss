@@ -1,0 +1,7 @@
+#stanleeMarvel{
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/014/009/742/large/miguel-luna-stan-lee-1.jpg?1542064871);
+    @include propiedadBackground(cover, center, no-repeat);
+    img{
+        max-height: 300px;
+    }
+}

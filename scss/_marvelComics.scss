@@ -1,0 +1,5 @@
+#marvelComics {
+    background-image: linear-gradient(rgba(5, 10, 5, 0.116), rgba(0, 0, 0, 0.158)), url(https://www.todofondos.net/wp-content/uploads/personajes-de-marvel-comics-4k-hd-fondos-de-escritorio-para-%E2%80%A2-dual-scaled.jpg);
+    @include propiedadBackground(cover, center, no-repeat);
+}
+

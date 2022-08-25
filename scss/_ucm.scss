@@ -1,7 +1,8 @@
-/*css a la section "ucm" */
 #ucmMarvel{
-
+    background-image: url(https://fondosmil.com/fondo/29601.jpg);
+    @include propiedadBackground(cover, center, no-repeat);
     .layout-ucm{
+        border: 3px solid rgb(255, 255, 255);
         .ucm1 {
             display: flex;
             img{
@@ -43,8 +44,8 @@
     }
         #table-ucm {
             display: flex;
-        justify-content: center;
-        margin-top: 20px;
+            justify-content: center;
+            margin-top: 20px;
     }
 
 
@@ -53,14 +54,12 @@
         justify-content: center;
         margin-top: 20px;
     }
+}
 
-    .carousel-inner {
-        img {
-        width: 700px;
-        height: 450px;
-        }
-    }
-
+section table {
+    background-color: rgb(172, 0, 0);
+    color: white;
+    font-family: "Roboto", sans-serif;
 }
 
 

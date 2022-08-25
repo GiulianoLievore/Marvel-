@@ -1,0 +1,73 @@
+#videojuegosMarvel{
+    background-image: url(https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/maestras/spiderman_ps4__nombre_provisional_-4623521.jpg);
+    @include propiedadBackground(cover, center, no-repeat);
+}
+
+.layout-vj {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid:
+    "sl1" 0fr
+    "sl2" 0fr
+    "s3" 0fr
+    / 1fr;
+    gap: 8px;
+    background-color: rgba(65, 62, 62, 0.568);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.vj1 { 
+    grid-area: sl1; 
+}
+.vj2 { 
+    grid-area: sl2; 
+}
+.vj3 { 
+    grid-area: s3; 
+}
+
+.vj1 iframe {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-top: 40px;      
+}
+
+.vj1 {
+    display: flex;
+}
+
+.vj2 iframe {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-top: 40px;      
+}
+
+.vj2 {
+    display: flex;
+}
+
+
+.vj3 iframe {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-top: 40px;      
+}
+
+.vj3 {
+    display: flex;
+}
+
+.vj4 iframe {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px; 
+    margin-top: 40px;      
+}
+
+.vj4 {
+    display: flex;
+}

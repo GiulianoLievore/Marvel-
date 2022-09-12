@@ -119,6 +119,7 @@ section p  {
 
     .estilo-a .img-container{
         height: 50%;
+        
     }
 
     .estilo-a .img-container img{
@@ -126,11 +127,11 @@ section p  {
         position: static;
     }
 
-    .card{
-        width: 80%;
-        margin-top: 10px;
-        margin-bottom: 30px;
+    #merchandisingMarvel .card{
+        width: 95% !important;
+        max-width: 500px;
     }
+
     #videojuegosMarvel iframe{
         height: 300px;
     }

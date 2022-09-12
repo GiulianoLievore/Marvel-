@@ -5,7 +5,7 @@
 
 html{
     font-size: 1rem;
-    font-family: "Roboto", sans-serif;
+    font-family: $fuente-p;
 }
 
 /*aplicando mapa a header*/
@@ -13,7 +13,7 @@ html{
 $header:(
     bordeHeader: 5px solid rgb(15, 15, 15),
     bgHeader: rgb(39, 39, 39),
-    colorEnlace: #fff
+    colorEnlace: #fff,
 );
 
 @mixin propiedadBackground ($size, $position, $repeat){
@@ -27,14 +27,14 @@ $header:(
     text-align: center;
     padding: 10px;
     font-size: 1rem;
-    color: white;
+    color: $blanco;
 }
 
 // Globales
 
 .layout {
     background-color: rgba(46, 45, 45, 0.562);
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid $blanco;
     padding: 10px;   
 }
 
@@ -61,7 +61,7 @@ h4 {
 
 section p  {
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuente-p;
     text-align: justify;
     font-size: 1rem;    
 }

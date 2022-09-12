@@ -10,11 +10,11 @@
     
         h1{
             width: 100%;
-            color: rgb(255, 255, 255);
-            font-family: 'Roboto', sans-serif;
+            color:$blanco;
+            font-family: $fuente-p;
             font-size: 2rem;
             font-weight: bold;
-            background-color: rgba(0, 0, 0, 0.87);
+            background-color: $gris-oscuro;
         }
     
         .card{
@@ -25,22 +25,22 @@
         
         .estilo-a{
             p{
-                font-family: 'Roboto', sans-serif;
+                font-family: $fuente-p;
                 font-size: 1rem;
-                color: black;
+                color: $gris-oscuro;
                 font-weight: bold;
                 text-align: center;
             }
         
             strong{
-                font-family: 'Roboto', sans-serif;
-                color: black;
+                font-family: $fuente-p;
+                color: $gris-oscuro;
                 font-weight: bold;
             }
         
             a{
                 text-decoration: none;
-                color: rgb(255, 255, 255);
+                color: $blanco;
                 text-align: center;
             
                 &:hover{
@@ -50,8 +50,8 @@
         
             .img-container{
                 overflow: hidden;
-                background-color: rgba(0, 0, 0, 0.904);
-                border: solid 2px white;
+                background-color: $gris-oscuro;
+                border: solid 2px $blanco;
                 
                 img {
                     width: 100%;

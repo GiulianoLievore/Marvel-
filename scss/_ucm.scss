@@ -1,7 +1,7 @@
 #ucmMarvel{
     background-image: url(https://wallpaper.dog/large/10841391.jpg);
     @include propiedadBackground(cover, center, no-repeat);
-    color: white;
+    color: $blanco;
 
     .ucmimg{
         padding: 10px;
@@ -15,9 +15,9 @@
     }
 
     .table {
-        background-color: rgba(143, 0, 0, 0.815);
-        color: rgb(235, 235, 235);
-        font-family: "Roboto", sans-serif; 
+        background-color: $bordo;
+        color: $blanco;
+        font-family: $fuente-p; 
     }
 }
 

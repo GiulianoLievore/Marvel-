@@ -1,65 +1,24 @@
 #ucmMarvel{
-    background-image: url(https://fondosmil.com/fondo/29601.jpg);
+    background-image: url(https://wallpaper.dog/large/10841391.jpg);
     @include propiedadBackground(cover, center, no-repeat);
-    .layout-ucm{
-        border: 3px solid rgb(255, 255, 255);
-        .ucm1 {
-            display: flex;
-            img{
-                width: 250px;
-                height: 200px;
-                border-radius: 10px;
-                margin-left: 20px;
-                display: flex;
-            }
-        }
-
-        .ucm2 {
-            display: flex;
-            img {
-                width: 250px;
-                border-radius: 10px;
-                margin-left: 20px;
-            }
-        }
-
-        .ucm3 {
-            display: flex;
-            img {
-                width: 250px;
-                border-radius: 10px;
-                margin-left: 20px;
-            }
-        }
-
-        .ucm4 {
-            display: flex;
-            img {
-                width: 250px;
-                border-radius: 10px;
-                margin-left: 20px;
-            }
-        }
-    
-    }
-        #table-ucm {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-    }
-
-
-    #iframe-ucm {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-}
-
-section table {
-    background-color: rgb(172, 0, 0);
     color: white;
-    font-family: "Roboto", sans-serif;
+
+    .ucmimg{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ucmimg img{
+        max-height: 350px;
+    }
+
+    .table {
+        background-color: rgba(143, 0, 0, 0.815);
+        color: rgb(235, 235, 235);
+        font-family: "Roboto", sans-serif; 
+    }
 }
 
 
